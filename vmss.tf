@@ -64,7 +64,7 @@ resource "azurerm_lb_probe" "vmss" {
 resource "azurerm_lb_rule" "lbnatrule" {
    resource_group_name            = "${azurerm_resource_group.vmss.name}"
    loadbalancer_id                = "${azurerm_lb.vmss.id}"
-   name                           = "http"
+   name                           = "ssh"
    protocol                       = "Tcp"
    frontend_port                  = "${var.application_port}"
    backend_port                   = "${var.application_port}"
