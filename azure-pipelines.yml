@@ -13,7 +13,9 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 - script: terraform init
-  displayName: 'terraform init ...'  
+  displayName: 'Terraform Init Step' 
+- script: terraform plan
+  displayName: 'Terraform Paln Step'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
